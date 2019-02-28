@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC8214FDF4A739ED751B93EF /* Pods_IOS_OpenPose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FC811A7CC5C8FB188ADF92 /* Pods_IOS_OpenPose.framework */; };
+		FFA14EA22227C4B100F043C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA14EA12227C4B100F043C1 /* AppDelegate.swift */; };
+		FFA14EA42227C4B100F043C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA14EA32227C4B100F043C1 /* ViewController.swift */; };
+		FFA14EA72227C4B100F043C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA14EA52227C4B100F043C1 /* Main.storyboard */; };
+		FFA14EA92227C4B200F043C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA14EA82227C4B200F043C1 /* Assets.xcassets */; };
+		FFA14EAC2227C4B200F043C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA14EAA2227C4B200F043C1 /* LaunchScreen.storyboard */; };
+		FFA14EBB2227C6F900F043C1 /* MobileOpenPose.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FFA14EB52227C6F900F043C1 /* MobileOpenPose.mlmodel */; };
+		FFA14EBC2227C6F900F043C1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA14EB62227C6F900F043C1 /* Common.swift */; };
+		FFA14EBD2227C6F900F043C1 /* Estimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA14EB72227C6F900F043C1 /* Estimator.swift */; };
+		FFA14EBE2227C6F900F043C1 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = FFA14EB92227C6F900F043C1 /* OpenCVWrapper.mm */; };
+		FFA14EC22227C7C600F043C1 /* ios_conversions.mm in Sources */ = {isa = PBXBuildFile; fileRef = FFA14EC12227C7C600F043C1 /* ios_conversions.mm */; };
+		FFA14EC52227C9AD00F043C1 /* human-pose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FFA14EC42227C9AD00F043C1 /* human-pose.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		360ED46B2BC0283D206419E4 /* Pods-IOS-OpenPose.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS-OpenPose.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOS-OpenPose/Pods-IOS-OpenPose.release.xcconfig"; sourceTree = "<group>"; };
+		63FC811A7CC5C8FB188ADF92 /* Pods_IOS_OpenPose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_OpenPose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F034B59743712BE685C8DBBF /* Pods-IOS-OpenPose.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS-OpenPose.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOS-OpenPose/Pods-IOS-OpenPose.debug.xcconfig"; sourceTree = "<group>"; };
+		FFA14E9E2227C4B100F043C1 /* IOS-OpenPose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-OpenPose.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA14EA12227C4B100F043C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFA14EA32227C4B100F043C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFA14EA62227C4B100F043C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFA14EA82227C4B200F043C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFA14EAB2227C4B200F043C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFA14EAD2227C4B200F043C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA14EB52227C6F900F043C1 /* MobileOpenPose.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileOpenPose.mlmodel; sourceTree = "<group>"; };
+		FFA14EB62227C6F900F043C1 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		FFA14EB72227C6F900F043C1 /* Estimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Estimator.swift; sourceTree = "<group>"; };
+		FFA14EB82227C6F900F043C1 /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		FFA14EB92227C6F900F043C1 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		FFA14EC12227C7C600F043C1 /* ios_conversions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ios_conversions.mm; sourceTree = "<group>"; };
+		FFA14EC32227C85100F043C1 /* IOS-OpenPose-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOS-OpenPose-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFA14EC42227C9AD00F043C1 /* human-pose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "human-pose.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFA14E9B2227C4B100F043C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8214FDF4A739ED751B93EF /* Pods_IOS_OpenPose.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A1E2D66C842778C847CE3F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63FC811A7CC5C8FB188ADF92 /* Pods_IOS_OpenPose.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF54861958CED46E9A486951 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F034B59743712BE685C8DBBF /* Pods-IOS-OpenPose.debug.xcconfig */,
+				360ED46B2BC0283D206419E4 /* Pods-IOS-OpenPose.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFA14E952227C4B100F043C1 = {
+			isa = PBXGroup;
+			children = (
+				FFA14EA02227C4B100F043C1 /* IOS-OpenPose */,
+				FFA14E9F2227C4B100F043C1 /* Products */,
+				EF54861958CED46E9A486951 /* Pods */,
+				0A1E2D66C842778C847CE3F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFA14E9F2227C4B100F043C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFA14E9E2227C4B100F043C1 /* IOS-OpenPose.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFA14EA02227C4B100F043C1 /* IOS-OpenPose */ = {
+			isa = PBXGroup;
+			children = (
+				FFA14EC42227C9AD00F043C1 /* human-pose.jpg */,
+				FFA14EBF2227C7C600F043C1 /* Vendors */,
+				FFA14EB32227C6F900F043C1 /* Sources */,
+				FFA14EA12227C4B100F043C1 /* AppDelegate.swift */,
+				FFA14EA32227C4B100F043C1 /* ViewController.swift */,
+				FFA14EA52227C4B100F043C1 /* Main.storyboard */,
+				FFA14EA82227C4B200F043C1 /* Assets.xcassets */,
+				FFA14EAA2227C4B200F043C1 /* LaunchScreen.storyboard */,
+				FFA14EAD2227C4B200F043C1 /* Info.plist */,
+				FFA14EC32227C85100F043C1 /* IOS-OpenPose-Bridging-Header.h */,
+			);
+			path = "IOS-OpenPose";
+			sourceTree = "<group>";
+		};
+		FFA14EB32227C6F900F043C1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FFA14EB52227C6F900F043C1 /* MobileOpenPose.mlmodel */,
+				FFA14EB62227C6F900F043C1 /* Common.swift */,
+				FFA14EB72227C6F900F043C1 /* Estimator.swift */,
+				FFA14EB82227C6F900F043C1 /* OpenCVWrapper.h */,
+				FFA14EB92227C6F900F043C1 /* OpenCVWrapper.mm */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FFA14EBF2227C7C600F043C1 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				FFA14EC02227C7C600F043C1 /* OpenCV */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		FFA14EC02227C7C600F043C1 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				FFA14EC12227C7C600F043C1 /* ios_conversions.mm */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFA14E9D2227C4B100F043C1 /* IOS-OpenPose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA14EB02227C4B200F043C1 /* Build configuration list for PBXNativeTarget "IOS-OpenPose" */;
+			buildPhases = (
+				5CDC65E263515A81444BC257 /* [CP] Check Pods Manifest.lock */,
+				FFA14E9A2227C4B100F043C1 /* Sources */,
+				FFA14E9B2227C4B100F043C1 /* Frameworks */,
+				FFA14E9C2227C4B100F043C1 /* Resources */,
+				72570EE2263AAC3CA01C76A3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IOS-OpenPose";
+			productName = "IOS-OpenPose";
+			productReference = FFA14E9E2227C4B100F043C1 /* IOS-OpenPose.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFA14E962227C4B100F043C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "DT Dat";
+				TargetAttributes = {
+					FFA14E9D2227C4B100F043C1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FFA14E992227C4B100F043C1 /* Build configuration list for PBXProject "IOS-OpenPose" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFA14E952227C4B100F043C1;
+			productRefGroup = FFA14E9F2227C4B100F043C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFA14E9D2227C4B100F043C1 /* IOS-OpenPose */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFA14E9C2227C4B100F043C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA14EAC2227C4B200F043C1 /* LaunchScreen.storyboard in Resources */,
+				FFA14EA92227C4B200F043C1 /* Assets.xcassets in Resources */,
+				FFA14EC52227C9AD00F043C1 /* human-pose.jpg in Resources */,
+				FFA14EA72227C4B100F043C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CDC65E263515A81444BC257 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOS-OpenPose-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72570EE2263AAC3CA01C76A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IOS-OpenPose/Pods-IOS-OpenPose-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OpenCV/opencv2.framework",
+				"${BUILT_PRODUCTS_DIR}/Upsurge/Upsurge.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/opencv2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Upsurge.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOS-OpenPose/Pods-IOS-OpenPose-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFA14E9A2227C4B100F043C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA14EBD2227C6F900F043C1 /* Estimator.swift in Sources */,
+				FFA14EA42227C4B100F043C1 /* ViewController.swift in Sources */,
+				FFA14EA22227C4B100F043C1 /* AppDelegate.swift in Sources */,
+				FFA14EC22227C7C600F043C1 /* ios_conversions.mm in Sources */,
+				FFA14EBE2227C6F900F043C1 /* OpenCVWrapper.mm in Sources */,
+				FFA14EBC2227C6F900F043C1 /* Common.swift in Sources */,
+				FFA14EBB2227C6F900F043C1 /* MobileOpenPose.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFA14EA52227C4B100F043C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA14EA62227C4B100F043C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFA14EAA2227C4B200F043C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA14EAB2227C4B200F043C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFA14EAE2227C4B200F043C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFA14EAF2227C4B200F043C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFA14EB12227C4B200F043C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F034B59743712BE685C8DBBF /* Pods-IOS-OpenPose.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 954C489898;
+				INFOPLIST_FILE = "IOS-OpenPose/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "moress.IOS-OpenPose";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOS-OpenPose/IOS-OpenPose-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFA14EB22227C4B200F043C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 360ED46B2BC0283D206419E4 /* Pods-IOS-OpenPose.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 954C489898;
+				INFOPLIST_FILE = "IOS-OpenPose/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "moress.IOS-OpenPose";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOS-OpenPose/IOS-OpenPose-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFA14E992227C4B100F043C1 /* Build configuration list for PBXProject "IOS-OpenPose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA14EAE2227C4B200F043C1 /* Debug */,
+				FFA14EAF2227C4B200F043C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA14EB02227C4B200F043C1 /* Build configuration list for PBXNativeTarget "IOS-OpenPose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA14EB12227C4B200F043C1 /* Debug */,
+				FFA14EB22227C4B200F043C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFA14E962227C4B100F043C1 /* Project object */;
+}
